@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '6'
+deploy:
+  provider: lambda
+  function_name: "MyTriviaGame"
+  region: eu-west-1
+  role: "arn:aws:lambda:eu-west-1:776295257389:function:MyTriviaGame"
+  handler_name: "index.handler"
+  access_key_id: "AKIAIKJ2P7ZFEOGUDHRA"
+  secret_access_key:
+    secure: HcAdHwZ/4HPdZH/A1JJxkTeq7qL55xUiCd/svHTBxo9Rtz+aDzBzBaDGDUXhQg6grMhDYvg3etryw2e+lmMM+IRrPYvyuFqt34cXgzxpdcb3gYUgiIcCV3MJn+zYGjcjng/Zs4Mln/TlyAKWZgKj+UlzTEW1VuDKYB55qsfxlP3Fl6locGzcYwwzCTu3FVOIOX2uVJiuCZuvsul8l/tBLohrpnf21hGEM/X1zwZErP6ycW6i8ro6pO9CjlSwVUiCxO57xjrpE5EC/bQ7+ed3JLagvUkin4lJHv2wi4H3TIpdBpRlXwo5swHZkpcpBQ42jidcb4bxGflffJRBQxcUXc4Z1LyOuocOEl8L3mSsdAFQuetW7fFu+AP3CqGzv0FZ+gxhTlP32Y1xTt02eqk4JWkm0dMECcTh4YLvRbiGUwlO+w9YcIlaCtJUV4Auvqy+jcDnlfq06Owdi25WUgGYS1lXVGbZqLUJOp1h0nbyYN0EvzLBH77mbw4EhbbzzAIC6iBIgFirkFAr/dRNbXxYmr5mgD4sf2WzKApt/3dA19lM16dwcIIwpGKWxaNbbLSNCEALDYAw1WM352Z7cySeQeE3PCC4ODafo0nu19LYWPfzTZ1FuDt5vGjkolQq8+Zb8GWHXnuPV4MHsrIuSdKwf81Zb0sGcruR9GyNCZqEB1c=
