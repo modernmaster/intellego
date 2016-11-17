@@ -8,6 +8,7 @@ deploy:
   role: "arn:aws:iam::776295257389:role/lambda_basic_execution"
   handler_name: "index.handler"
   access_key_id: "AKIAIKJ2P7ZFEOGUDHRA"
+  zip: "${TRAVIS_BUILD_DIR}/dist/src.zip"
   on:
     branch: master
   secret_access_key:
