@@ -5,7 +5,7 @@ deploy:
   provider: lambda
   function_name: "MyTriviaGame"
   region: eu-west-1
-  role: "arn:aws:iam::776295257389:role/lambda-deploy"
+  role: "arn:aws:iam::776295257389:role/lambda_basic_execution"
   handler_name: "index.handler"
   access_key_id: "AKIAIKJ2P7ZFEOGUDHRA"
   on:
