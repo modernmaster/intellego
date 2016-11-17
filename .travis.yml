@@ -6,7 +6,7 @@ deploy:
   function_name: "MyTriviaGame"
   region: eu-west-1
   role: "arn:aws:iam::776295257389:role/lambda_basic_execution"
-  handler_name: "index.handler"
+  handler_name: "handler"
   access_key_id: "AKIAIKJ2P7ZFEOGUDHRA"
   zip: "${TRAVIS_BUILD_DIR}/dist/src.zip"
   on:
