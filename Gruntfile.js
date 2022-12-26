@@ -1,8 +1,13 @@
 /*global module:false*/
 module.exports = function(grunt) {
-
   // Project configuration.
   grunt.initConfig({
+	  concat: {
+	    dist: {
+		    src: 'src/index.js',
+        dest: 'dist/output.js'
+      }
+    },      
     // Task configuration.
     jshint: {
       options: {
