@@ -1,13 +1,7 @@
 /*global module:false*/
 module.exports = function(grunt) {
   // Project configuration.
-  grunt.initConfig({
-	  concat: {
-	    dist: {
-		    src: 'src/index.js',
-        dest: 'dist/output.js'
-      }
-    },      
+  grunt.initConfig({    
     // Task configuration.
     jshint: {
       options: {
@@ -31,9 +25,6 @@ module.exports = function(grunt) {
         src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
-    nodeunit: {
-      files: ['test/**/*_test.js']
-    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -47,11 +38,10 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit']);
+  grunt.registerTask('default', ['jshint']);
 
 };
